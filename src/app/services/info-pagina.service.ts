@@ -22,7 +22,7 @@ export class InfoPaginaService {
 
   private cargarInfo() {
     // Leer el archivo JSON
-    this.http.get('assets/data/data-pagina.json')
+    this.http.get('https://angular-html-d272d-default-rtdb.firebaseio.com/informacion.json')
     .subscribe((resp: InfoPagina)=> {
 
       this.cargada = true;
